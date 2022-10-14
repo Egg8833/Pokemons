@@ -20,7 +20,7 @@
       </router-link>
     </div>
     <div v-if="isLoad" class="w-40 flex justify-center">
-      <div v-for="(item, index) in newpokemons" v-show="imgI === index">
+      <div v-for="(item, index) in newpokemons" v-show="imgI == index">
         <h3 class="text-2xl text-green-900 text-center">{{ item.name }}</h3>
         <img class="w-40" :src="item.png" alt="" />
       </div>
